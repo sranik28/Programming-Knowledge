@@ -10,22 +10,23 @@ import { useState } from 'react'
 
 function App() {
 
-  const [readTime , setReadTime]=useState(0);
+  const [readTime, setReadTime] = useState(0);
 
-  const[bookMarkItems,setBookMarkItems]=useState([])
+  const [bookMarkItems, setBookMarkItems] = useState([]);
 
   return (
-    <div className="max-w-[1240px] mx-auto">
-      <div>
-        <div>
-          <Header />
-        </div>
-        <div className='md:grid  md:grid-cols-3'>
-        <Blog readingTime={readTime} setReadingTime={setReadTime} bookMarkItems={bookMarkItems} setBookMarkItems={setBookMarkItems}></Blog>
-        <RightSite readingTime={readTime} bookMarkItems={bookMarkItems}></RightSite>
-        </div>
+    <div className="App">
+
+      <div className="max-w-[1240px] mx-auto">
+        <Header></Header>
       </div>
-      <Question />
+
+      <div className="max-w-[1200px] mx-auto rounded-md mt-6 md:grid md:grid-cols-3 gap-4">
+        <Blog readTime={readTime} setReadTime={setReadTime} bookMarkItems={bookMarkItems} setBookMarkItems={setBookMarkItems}></Blog>
+        <RightSite readTime={readTime} bookMarkItems={bookMarkItems}></RightSite>
+
+      </div>
+      <Question></Question>
     </div>
   )
 }

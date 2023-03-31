@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Card = ({ blog }) => {
+const Card = ({ blog ,countReadingTime, addBookMark}) => {
     const { authorName, authorImgUrl, blogTitle, coverImgUrl, readTime, publishDate, } = blog
     return (
         <div className='my-10'>
-            <div className="card w-full bg-base-100 shadow-2xl">
+            <div className="card w-full bg-base-100 border">
                 <figure><img src={coverImgUrl} alt="Shoes" /></figure>
                 <div className='flex justify-between items-center p-6'>
                     <div className='flex gap-4 items-center'>
@@ -16,7 +16,7 @@ const Card = ({ blog }) => {
                     </div>
                     <div className='flex'>
                         <p>{readTime} min read</p>
-                        <button className='ml-2'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <button onClick={() => addBookMark(blogTitle)} className='ml-2'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
                         </svg>
                         </button>
@@ -24,7 +24,7 @@ const Card = ({ blog }) => {
                 </div>
                 <h2 className="p-5 font-bold text-2xl">{blogTitle}</h2>
                 <small><p className='py-5'> #beginners  #programming</p></small>
-                <a className='pb-5 underline text-sky-700' href="/Mark as read">Mark as read</a>
+                <button onClick={() => countReadingTime(blog)} className='pb-5 underline text-sky-700' href="/Mark as read">Mark as read</button>
             </div>
         </div>
     );
