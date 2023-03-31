@@ -6,7 +6,7 @@ const Card = ({ blog }) => {
         <div className='my-10'>
             <div className="card w-full bg-base-100 shadow-2xl">
                 <figure><img src={coverImgUrl} alt="Shoes" /></figure>
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center p-6'>
                     <div className='flex gap-4 items-center'>
                         <img className='w-12 rounded-full my-2' src={authorImgUrl} alt="" />
                         <div>
@@ -22,7 +22,7 @@ const Card = ({ blog }) => {
                         </button>
                     </div>
                 </div>
-                <h2 className="py-5 font-bold text-2xl">{blogTitle}</h2>
+                <h2 className="p-5 font-bold text-2xl">{blogTitle}</h2>
                 <small><p className='py-5'> #beginners  #programming</p></small>
                 <a className='pb-5 underline text-sky-700' href="/Mark as read">Mark as read</a>
             </div>

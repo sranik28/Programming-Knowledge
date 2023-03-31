@@ -4,6 +4,7 @@
 import './App.css'
 import Blog from './components/Blog/Blog'
 import Header from './components/Header/Header'
+import Question from './Question/Question'
 import RightSite from './components/RightSite/RightSite'
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <div>
           <Header />
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 '>
           <div>
           <Blog />
           </div>
@@ -23,6 +24,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Question/>
     </div>
   )
 }
