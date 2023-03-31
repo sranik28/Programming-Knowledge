@@ -8,7 +8,7 @@ const Question = () => {
                 <div className="card w-full bg-base-100 shadow-2xl">
                     <div className="card-body">
                         <h2 className="card-title">Props vs state</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt tenetur voluptatum quidem minima recusandae architecto asperiores. Expedita illo, eos quas praesentium, at fugiat alias iusto perferendis esse ipsum tempora laudantium quasi nobis, tenetur saepe ratione similique nisi cupiditate. Est magnam vel libero! Maiores, est dolor voluptates commodi corporis consequatur.</p>
+                        <p>Props can pass data from child components to parent components.Props are read-only, meaning that a component cannot modify its own props - they can only be modified by the parent component.</p>
                     </div>
                 </div>
                 <div className="card w-full bg-base-100 shadow-2xl">

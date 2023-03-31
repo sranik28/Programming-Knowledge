@@ -9,9 +9,9 @@ const Blog = () => {
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
-
+    
     return (
-        <div className='lg:px-28 mt-10'>
+        <div className=' mt-10 col-span-2'>
            {
             blogs.map(blog=><Card blog={blog} key={blog.id}></Card>)
            }
