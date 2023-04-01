@@ -2,7 +2,7 @@ import React from 'react';
 
 const Question = () => {
     return (
-        <div>
+        <>
             <h1 className='text-center font-bold text-4xl my-5 text-amber-700'>Question <span className='text-orange-500'>Answer's</span></h1>
             <div className='lg:px-28 grid grid-cols-1 lg:grid-cols-2 my-10 gap-5'>
                 <div className="card w-full bg-base-100 shadow-2xl">
@@ -30,7 +30,7 @@ const Question = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
