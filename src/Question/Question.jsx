@@ -7,26 +7,26 @@ const Question = () => {
             <div className='lg:px-28 grid grid-cols-1 lg:grid-cols-2 my-10 gap-5'>
                 <div className="card w-full bg-base-100 shadow-2xl">
                     <div className="card-body">
-                        <h2 className="card-title">Props vs state</h2>
-                        <p>Props can pass data from child components to parent components.Props are read-only, meaning that a component cannot modify its own props - they can only be modified by the parent component.</p>
+                        <h2 className="card-title">Difference between 'props' and 'state' in react</h2>
+                        <p><strong>Props</strong> can pass data from child components to parent components.Props are read-only, meaning that a component cannot modify its own props - they can only be modified by the parent component.<strong>State</strong> refers to a component's internal data that can change over time.State is mutable and can be updated using setState() method.</p>
                     </div>
                 </div>
                 <div className="card w-full bg-base-100 shadow-2xl">
                     <div className="card-body">
                         <h2 className="card-title">How does useState work?</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto earum natus quis magnam nesciunt esse dignissimos? Ad temporibus praesentium veritatis dolore earum perferendis, repudiandae natus, illo obcaecati tempora cupiditate minima quasi cum repellat consequatur repellendus numquam quos esse sint? Fugit magnam eos consectetur iusto cumque, unde id quos dolor recusandae.</p>
+                        <p><strong>useState()</strong> is a React hook that allows functional components to use state. It takes an initial value as a parameter and returns an array with two elements: the current state value and a function to update the state. You can use this function to update the state in response to user interactions or other events, and React will automatically re-render the component with the new state value.</p>
                     </div>
                 </div>
                 <div className="card w-full bg-base-100 shadow-2xl">
                     <div className="card-body">
-                        <h2 className="card-title">Purpose of useEffect other than fetching data.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores atque veniam possimus necessitatibus cumque, quaerat nisi molestias. Nulla ad aliquid earum? Totam suscipit deleniti necessitatibus consequatur rem odit accusantium vel mollitia, eaque quis officiis aliquam commodi? Laudantium in, beatae non quo ipsam similique id quis harum. Quas, libero voluptate?</p>
+                        <h2 className="card-title">Purpose of 'useEffect' other than fetching data?</h2>
+                        <p><strong>useEffect()</strong> is a React hook that allows functional components to perform side effects, such as fetching data from an API or updating the DOM. It takes two parameters: a function that performs the side effect, and an optional array of dependencies that specify when the effect should run.</p>
                     </div>
                 </div>
                 <div className="card w-full bg-base-100 shadow-2xl">
                     <div className="card-body">
                         <h2 className="card-title">How Does React work?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minima labore qui ex, excepturi exercitationem doloribus quod officiis suscipit praesentium. Deleniti maiores, animi molestiae soluta aperiam sit distinctio laudantium est incidunt id reprehenderit consequatur quam a exercitationem neque sequi omnis illo aliquid repellat dolore! Voluptates perferendis veritatis saepe repellat doloremque.</p>
+                        <p><strong>React</strong> is a JavaScript library for building user interfaces. It works by using a declarative programming model to describe the state of a UI at any given time, and providing a way to update that state in response to user actions or other events.</p>
                     </div>
                 </div>
             </div>

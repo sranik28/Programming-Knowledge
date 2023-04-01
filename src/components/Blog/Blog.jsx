@@ -11,11 +11,12 @@ const Blog = ({bookMarkItems , setBookMarkItems , setReadTime , readTime}) => {
     const addBookMark = (title) => {
         const previous = [...bookMarkItems]
         if (previous.includes(title)) {
-            toast.error('already added!')
-        } else {
+            toast.error('already added!')               
+        }
+        else {
             const newBookMark = [...bookMarkItems, title]
             setBookMarkItems(newBookMark)
-        }
+        }   
     }
 
     const countReadingTime = (blog) => {
