@@ -23,8 +23,8 @@ const Card = ({ blog ,countReadingTime, addBookMark}) => {
                     </div>
                 </div>
                 <h2 className="p-5 font-bold text-2xl">{blogTitle}</h2>
-                <small><p className='py-5'> #beginners  #programming</p></small>
-                <button onClick={() => countReadingTime(blog)} className='pb-5 underline text-sky-700' href="/Mark as read">Mark as read</button>
+                <p className='p-5 text-base text-gray-500 '> #beginners #programming</p>
+                <button onClick={() => countReadingTime(blog)} className='pb-5 underline text-sky-700 text-start mx-10'>Mark as read</button>
             </div>
         </div>
     );
